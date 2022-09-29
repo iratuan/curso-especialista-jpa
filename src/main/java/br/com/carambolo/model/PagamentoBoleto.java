@@ -13,6 +13,7 @@ public class PagamentoBoleto {
 
     @Id
     @EqualsAndHashCode.Include
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column(name = "pedido_id")
     private Integer pedidoId;

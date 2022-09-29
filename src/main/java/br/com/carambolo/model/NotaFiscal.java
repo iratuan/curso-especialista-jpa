@@ -3,10 +3,7 @@ package br.com.carambolo.model;
 import br.com.carambolo.model.enums.Sexo;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -17,6 +14,7 @@ public class NotaFiscal {
 
     @Id
     @EqualsAndHashCode.Include
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column(name = "pedido_id")
     private Integer pedidoId;

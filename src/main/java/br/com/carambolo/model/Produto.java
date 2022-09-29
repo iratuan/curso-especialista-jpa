@@ -1,9 +1,8 @@
 package br.com.carambolo.model;
 
 import lombok.*;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import javax.persistence.*;
 
 import java.math.BigDecimal;
 
@@ -15,6 +14,7 @@ import java.math.BigDecimal;
 public class Produto {
     @Id
     @EqualsAndHashCode.Include
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String nome;
     private String descricao;

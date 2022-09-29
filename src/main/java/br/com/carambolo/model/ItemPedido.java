@@ -4,10 +4,7 @@ import br.com.carambolo.model.enums.Sexo;
 import lombok.*;
 
 import javax.lang.model.element.Name;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
@@ -18,6 +15,7 @@ public class ItemPedido {
 
     @Id
     @EqualsAndHashCode.Include
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column(name = "pedido_id")
     private Integer pedidoId;

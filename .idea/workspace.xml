@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Mapeando uma classe embedable">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/PedidoTest.java" afterDir="false" />
+    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Adicionando Mockito ao projeto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/ItemPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/NotaFiscal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/NotaFiscal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoBoleto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoCartao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ClienteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/PedidoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/PedidoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ProdutoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +104,7 @@
       <recent name="br.com.carambolo.model.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PedidoTest">
+  <component name="RunManager" selected="JUnit.All in projeto">
     <configuration name="IniciarUnidadePersistencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.carambolo.util.IniciarUnidadePersistencia" />
       <module name="projeto" />
@@ -104,6 +114,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in projeto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projeto" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,29 +187,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutoTest.atualizaProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="projeto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.carambolo.model.enums.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.carambolo.model" />
-      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.model.ProdutoTest" />
-      <option name="METHOD_NAME" value="atualizaProduto" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in projeto" />
         <item itemvalue="JUnit.PedidoTest" />
         <item itemvalue="Application.IniciarUnidadePersistencia" />
         <item itemvalue="JUnit.ClienteTest" />
         <item itemvalue="JUnit.ClienteTest.persisteProduto" />
-        <item itemvalue="JUnit.ProdutoTest.atualizaProduto" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664487644348</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adicionando Mockito ao projeto">
+      <created>1664487806189</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664487806189</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,6 +269,7 @@
     <MESSAGE value="Mudanças no sql para normalização dos nomes das tabelas" />
     <MESSAGE value="Mudança dos nomes dos métodos nos testes" />
     <MESSAGE value="Mapeando uma classe embedable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapeando uma classe embedable" />
+    <MESSAGE value="Adicionando Mockito ao projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando Mockito ao projeto" />
   </component>
 </project>

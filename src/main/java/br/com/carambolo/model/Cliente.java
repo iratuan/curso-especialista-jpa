@@ -13,6 +13,7 @@ public class Cliente {
 
     @Id
     @EqualsAndHashCode.Include
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String nome;
     @Enumerated(EnumType.STRING)
