@@ -3,10 +3,7 @@ package br.com.carambolo.model;
 import br.com.carambolo.model.enums.StatusPedido;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -25,7 +22,11 @@ public class Pedido {
     private LocalDateTime dataConclusao;
     @Column(name = "nota_fiscal_id")
     private Integer notaFiscalId;
+    @Enumerated(EnumType.STRING)
     private StatusPedido status;
     private BigDecimal total;
+
+    @Embedded
+    private Endereco endereco;
 
 }

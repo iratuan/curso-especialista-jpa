@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Mudanças no sql para normalização dos nomes das tabelas">
+    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Mudança dos nomes dos métodos nos testes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Endereco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ClienteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ProdutoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoBoleto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoCartao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Pedido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,7 +96,7 @@
       <recent name="br.com.carambolo.model.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClienteTest.persisteProduto">
+  <component name="RunManager" selected="Application.IniciarUnidadePersistencia">
     <configuration name="IniciarUnidadePersistencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.carambolo.util.IniciarUnidadePersistencia" />
       <module name="projeto" />
@@ -187,9 +190,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClienteTest.persisteProduto" />
         <item itemvalue="Application.IniciarUnidadePersistencia" />
         <item itemvalue="JUnit.ClienteTest" />
+        <item itemvalue="JUnit.ClienteTest.persisteProduto" />
         <item itemvalue="JUnit.ProdutoTest.atualizaProduto" />
         <item itemvalue="JUnit.ProdutoTest.persisteProduto" />
       </list>
@@ -225,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664486062761</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Mudança dos nomes dos métodos nos testes">
+      <created>1664486527276</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664486527276</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,6 +254,7 @@
     <MESSAGE value="Projeto inicial" />
     <MESSAGE value="Projeto Modelagem das classes do capitulo 03" />
     <MESSAGE value="Mudanças no sql para normalização dos nomes das tabelas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mudanças no sql para normalização dos nomes das tabelas" />
+    <MESSAGE value="Mudança dos nomes dos métodos nos testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudança dos nomes dos métodos nos testes" />
   </component>
 </project>
