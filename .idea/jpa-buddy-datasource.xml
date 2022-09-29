@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="52f722cd-fd8d-4572-87e9-e3315e87ff20" name="connProjeto" url="jdbc:mysql://localhost/cursojpa?useSSL=false&amp;allowMultiQueries=true&amp;serverTimezone=UTC" driverClass="com.mysql.cj.jdbc.Driver" />
+    </data-sources>
+    <data-source-infos>
+      <data-source-info id="" persistence-unit-name="puEcommerce" />
+    </data-source-infos>
+  </component>
+</project>
