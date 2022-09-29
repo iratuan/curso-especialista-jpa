@@ -6,51 +6,98 @@ import org.junit.Test;
 
 import java.math.BigDecimal;
 
-public class ProdutoTest extends EntityManagerTest{
+public class ProdutoTest extends EntityManagerTest {
 
-        @Test
-        public void buscarPorId(){
-            Produto produto = entityManager.find(Produto.class, 1);
+    @Test
+    public void buscarPorId() {
+        Produto produto = entityManager.find(Produto.class, 1);
 
-            Assert.assertNotNull(produto);
-            Assert.assertEquals("Kindle", produto.getNome());
-        }
+        Assert.assertNotNull(produto);
+        Assert.assertEquals("Kindle", produto.getNome());
+    }
 
-        @Test
-         public void atualizarReferencia(){
-            Produto produto = entityManager.find(Produto.class, 1);
-            produto.setNome("Camisa star wars");
+    @Test
+    public void atualizarReferencia() {
+        Produto produto = entityManager.find(Produto.class, 1);
+        produto.setNome("Camisa star wars");
 
-            entityManager.refresh(produto);
+        entityManager.refresh(produto);
 
-            Assert.assertEquals("Kindle", produto.getNome());
-        }
+        Assert.assertEquals("Kindle", produto.getNome());
+    }
 
-        @Test
-        public void persisteProduto(){
+    @Test
+    public void persisteProduto() {
 
-            var produto = new Produto();
-            produto.setId(2);
-            produto.setNome("IPad");
-            produto.setDescricao("IPad 12 Polegadas");
-            produto.setPreco(new BigDecimal("1500"));
+        var produto = new Produto();
+        produto.setId(2);
+        produto.setNome("IPad");
+        produto.setDescricao("IPad 12 Polegadas");
+        produto.setPreco(new BigDecimal("1500"));
 
-            // Abre transação
-            entityManager.getTransaction().begin();
+        // Abre transação
+        entityManager.getTransaction().begin();
+        // Persistindo o objeto
+        entityManager.persist(produto);
+        // Envia transação
+        entityManager.getTransaction().commit();
+        // Limpando a memória da transação
+        entityManager.clear();
 
-            entityManager.persist(produto);
+        var produtoPesquisado = entityManager.find(Produto.class, 2);
+        Assert.assertNotNull(produtoPesquisado);
+    }
 
-            // Envia transação
-            entityManager.getTransaction().commit();
+    @Test
+    public void removendoProduto() {
 
-            // Limpando a memória da transação
+        var produto = new Produto();
+        produto.setId(3);
+        produto.setNome("Galaxy Pro");
+        produto.setDescricao("Notebook");
+        produto.setPreco(new BigDecimal(10000));
 
-            entityManager.clear();
+        // Abre transação
+        entityManager.getTransaction().begin();
+        // Persistindo o objeto
+        entityManager.remove(produto);
+        // Envia transação
+        entityManager.getTransaction().commit();
 
-            var produtoPesquisado = entityManager.find(Produto.class, 2);
+        var produtoPesquisado = entityManager.find(Produto.class, 3);
+        Assert.assertNull(produtoPesquisado);
+    }
 
-            Assert.assertNotNull(produtoPesquisado);
-        }
+    @Test
+    public void atualizaProduto() {
 
+        var produto = entityManager.find(Produto.class, 1);
+        // Abre transação
+        entityManager.getTransaction().begin();
+        produto.setPreco(new BigDecimal(100));
+        // Envia transação
+        entityManager.getTransaction().commit();
+        var produtoPesquisado = entityManager.find(Produto.class, 1);
+        Assert.assertNotNull(produtoPesquisado);
+        Assert.assertEquals(new BigDecimal(100), produtoPesquisado.getPreco());
+    }
+
+    @Test
+    public void inserindoComMerge() {
+
+        var produto = new Produto();
+        produto.setId(4);
+        produto.setNome("Galaxy Pro");
+        produto.setDescricao("Notebook");
+        produto.setPreco(new BigDecimal(10000));
+        // Abre transação
+        entityManager.getTransaction().begin();
+        entityManager.merge(produto);
+        // Envia transação
+        entityManager.getTransaction().commit();
+        var produtoPesquisado = entityManager.find(Produto.class, 4);
+        Assert.assertNotNull(produtoPesquisado);
+        Assert.assertEquals("Galaxy Pro", produtoPesquisado.getNome());
+    }
 
 }

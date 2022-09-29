@@ -1,22 +1,23 @@
 package br.com.carambolo.model;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import java.math.BigDecimal;
-
-
 @Entity
-@Table(name = "produto")
+@Table(name = "categoria")
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Produto {
+public class Categoria {
+
     @Id
     @EqualsAndHashCode.Include
     private Integer id;
     private String nome;
-    private String descricao;
-    private BigDecimal preco;
+    @Column(name = "categoria_pai_id")
+    private Integer categoriaPaiId;
 }
