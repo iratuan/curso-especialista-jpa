@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Mudança dos nomes dos métodos nos testes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Endereco.java" afterDir="false" />
+    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Mapeando uma classe embedable">
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/PedidoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoBoleto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoCartao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 &amp; Mockito" />
       </list>
     </option>
   </component>
@@ -96,7 +94,7 @@
       <recent name="br.com.carambolo.model.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IniciarUnidadePersistencia">
+  <component name="RunManager" selected="JUnit.PedidoTest">
     <configuration name="IniciarUnidadePersistencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.carambolo.util.IniciarUnidadePersistencia" />
       <module name="projeto" />
@@ -141,6 +139,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PedidoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projeto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.carambolo.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.carambolo.model" />
+      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.model.PedidoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProdutoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projeto" />
       <extension name="coverage">
@@ -172,29 +185,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutoTest.persisteProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="projeto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.carambolo.model.enums.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.carambolo.model" />
-      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.model.ProdutoTest" />
-      <option name="METHOD_NAME" value="persisteProduto" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PedidoTest" />
         <item itemvalue="Application.IniciarUnidadePersistencia" />
         <item itemvalue="JUnit.ClienteTest" />
         <item itemvalue="JUnit.ClienteTest.persisteProduto" />
         <item itemvalue="JUnit.ProdutoTest.atualizaProduto" />
-        <item itemvalue="JUnit.ProdutoTest.persisteProduto" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664486527276</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mapeando uma classe embedable">
+      <created>1664487644348</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664487644348</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,6 +259,7 @@
     <MESSAGE value="Projeto Modelagem das classes do capitulo 03" />
     <MESSAGE value="Mudanças no sql para normalização dos nomes das tabelas" />
     <MESSAGE value="Mudança dos nomes dos métodos nos testes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mudança dos nomes dos métodos nos testes" />
+    <MESSAGE value="Mapeando uma classe embedable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mapeando uma classe embedable" />
   </component>
 </project>
