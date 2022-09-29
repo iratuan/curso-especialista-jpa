@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 public class ProdutoTest extends EntityManagerTest {
 
     @Test
-    public void buscarPorId() {
+    public void buscaPorId() {
         Produto produto = entityManager.find(Produto.class, 1);
 
         Assert.assertNotNull(produto);
@@ -17,7 +17,7 @@ public class ProdutoTest extends EntityManagerTest {
     }
 
     @Test
-    public void atualizarReferencia() {
+    public void atualizaReferencia() {
         Produto produto = entityManager.find(Produto.class, 1);
         produto.setNome("Camisa star wars");
 
@@ -49,7 +49,7 @@ public class ProdutoTest extends EntityManagerTest {
     }
 
     @Test
-    public void removendoProduto() {
+    public void removeProduto() {
 
         var produto = new Produto();
         produto.setId(3);
@@ -83,7 +83,7 @@ public class ProdutoTest extends EntityManagerTest {
     }
 
     @Test
-    public void inserindoComMerge() {
+    public void insereComMerge() {
 
         var produto = new Produto();
         produto.setId(4);

@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Projeto Modelagem das classes do capitulo 03">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" afterDir="false" />
+    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Mudanças no sql para normalização dos nomes das tabelas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ClienteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ProdutoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,7 @@
       <recent name="br.com.carambolo.model.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IniciarUnidadePersistencia">
+  <component name="RunManager" selected="JUnit.ClienteTest.persisteProduto">
     <configuration name="IniciarUnidadePersistencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.carambolo.util.IniciarUnidadePersistencia" />
       <module name="projeto" />
@@ -120,17 +122,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClienteTest.persisteProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projeto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.carambolo.*" />
+          <option name="PATTERN" value="br.com.carambolo.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.carambolo" />
-      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.ProdutoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="br.com.carambolo.model" />
+      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.model.ClienteTest" />
+      <option name="METHOD_NAME" value="persisteProduto" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClienteTest.persisteProduto" />
         <item itemvalue="Application.IniciarUnidadePersistencia" />
         <item itemvalue="JUnit.ClienteTest" />
         <item itemvalue="JUnit.ProdutoTest.atualizaProduto" />
         <item itemvalue="JUnit.ProdutoTest.persisteProduto" />
-        <item itemvalue="JUnit.ProdutoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664485417418</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mudanças no sql para normalização dos nomes das tabelas">
+      <created>1664486062761</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664486062761</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +243,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Projeto inicial" />
     <MESSAGE value="Projeto Modelagem das classes do capitulo 03" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projeto Modelagem das classes do capitulo 03" />
+    <MESSAGE value="Mudanças no sql para normalização dos nomes das tabelas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudanças no sql para normalização dos nomes das tabelas" />
   </component>
 </project>

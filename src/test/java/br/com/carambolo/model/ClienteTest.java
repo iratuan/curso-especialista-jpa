@@ -1,5 +1,6 @@
 package br.com.carambolo.model;
 
+import br.com.carambolo.model.enums.Sexo;
 import br.com.carambolo.util.EntityManagerTest;
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,11 +11,12 @@ public class ClienteTest extends EntityManagerTest {
 
 
     @Test
-    public void persisteProduto() {
+    public void persisteCliente() {
 
         var cliente = new Cliente();
         cliente.setId(3);
         cliente.setNome("Ian");
+        cliente.setSexo(Sexo.MASCULINO);
         // Abre transação
         entityManager.getTransaction().begin();
         // Persistindo o objeto
@@ -28,7 +30,7 @@ public class ClienteTest extends EntityManagerTest {
     }
 
     @Test
-    public void removendoProduto() {
+    public void removeCliente() {
 
         var cliente = new Produto();
         cliente.setId(2);
@@ -44,7 +46,7 @@ public class ClienteTest extends EntityManagerTest {
     }
 
     @Test
-    public void atualizaProduto() {
+    public void atualizaCliente() {
 
         var cliente = entityManager.find(Cliente.class, 1);
         // Abre transação
