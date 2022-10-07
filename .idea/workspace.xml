@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Adicionando Mockito ao projeto">
+    <list default="true" id="5128d90f-70eb-4c88-9240-fda86f0a1ffb" name="Changes" comment="Adicionando autoincrement nas entidades. Retirando os testes para refactory">
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/persitence/CategoriaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/persitence/PedidoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Categoria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Estoque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/ItemPedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/NotaFiscal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/NotaFiscal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoBoleto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/PagamentoCartao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/carambolo/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ClienteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/PedidoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/PedidoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/carambolo/model/ProdutoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +25,15 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 &amp; Mockito" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="capitulo-03" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,19 +65,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Estudos/especialista_jpa/my_code/projeto_jpa/projeto/src/main/java/br/com/carambolo/util&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Estudos/especialista_jpa/my_code/projeto_jpa/projeto/src/main/resources/META-INF&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "C:/Estudos/especialista_jpa/my_code/projeto_jpa/projeto/src/main/java/br/com/carambolo/util",
+    "last_opened_file_path": "C:/Estudos/especialista_jpa/my_code/projeto_jpa/projeto/src/main/resources/META-INF",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.carambolo.model.enums" />
@@ -100,13 +96,14 @@
       <recent name="br.com.carambolo.model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.carambolo.persitence" />
       <recent name="br.com.carambolo.model" />
       <recent name="br.com.carambolo.model.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in projeto">
-    <configuration name="IniciarUnidadePersistencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.util.IniciarUnidadePersistencia" />
+  <component name="RunManager" selected="JUnit.CategoriaTest">
+    <configuration name="Calculadora" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.util.Calculadora" />
       <module name="projeto" />
       <extension name="coverage">
         <pattern>
@@ -126,33 +123,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClienteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projeto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.carambolo.model.enums.*" />
+          <option name="PATTERN" value="br.com.carambolo.persitence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.carambolo.model" />
-      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.model.ClienteTest" />
+      <option name="PACKAGE_NAME" value="br.com.carambolo.persitence" />
+      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.persitence.CategoriaTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClienteTest.persisteProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PedidoTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projeto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.carambolo.model.*" />
+          <option name="PATTERN" value="br.com.carambolo.persitence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.carambolo.model" />
-      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.model.ClienteTest" />
-      <option name="METHOD_NAME" value="persisteProduto" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="br.com.carambolo.persitence" />
+      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.persitence.PedidoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,28 +168,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="projeto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.carambolo.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.carambolo.model" />
-      <option name="MAIN_CLASS_NAME" value="br.com.carambolo.model.ProdutoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CategoriaTest" />
+        <item itemvalue="JUnit.PedidoTest (1)" />
+        <item itemvalue="Application.Calculadora" />
         <item itemvalue="JUnit.All in projeto" />
         <item itemvalue="JUnit.PedidoTest" />
-        <item itemvalue="Application.IniciarUnidadePersistencia" />
-        <item itemvalue="JUnit.ClienteTest" />
-        <item itemvalue="JUnit.ClienteTest.persisteProduto" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664487806189</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adicionando autoincrement nas entidades. Retirando os testes para refactory">
+      <created>1664490956592</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664490956592</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +258,7 @@
     <MESSAGE value="Mudança dos nomes dos métodos nos testes" />
     <MESSAGE value="Mapeando uma classe embedable" />
     <MESSAGE value="Adicionando Mockito ao projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando Mockito ao projeto" />
+    <MESSAGE value="Adicionando autoincrement nas entidades. Retirando os testes para refactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando autoincrement nas entidades. Retirando os testes para refactory" />
   </component>
 </project>

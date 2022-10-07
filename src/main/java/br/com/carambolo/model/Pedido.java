@@ -17,12 +17,17 @@ public class Pedido {
     @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
     @Column(name = "data_pedido")
     private LocalDateTime dataPedido;
     @Column(name = "data_conclusao")
     private LocalDateTime dataConclusao;
-    @Column(name = "nota_fiscal_id")
-    private Integer notaFiscalId;
+
+    @OneToOne
+    @JoinColumn(name = "nota_fiscal_id")
+    private NotaFiscal notaFiscal;
     @Enumerated(EnumType.STRING)
     private StatusPedido status;
     private BigDecimal total;

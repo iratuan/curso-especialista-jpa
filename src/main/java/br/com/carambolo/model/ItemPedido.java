@@ -17,11 +17,17 @@ public class ItemPedido {
     @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Column(name = "pedido_id")
-    private Integer pedidoId;
-    @Column(name = "produto_id")
-    private Integer produtoId;
+
+    @ManyToOne
+    @JoinColumn(name = "pedido_id")
+    private Pedido pedido;
+
+    @ManyToOne
+    @JoinColumn(name = "produto_id")
+    private Pedido produtoId;
+
     @Column(name = "produto_preco")
     private BigDecimal precoProduto;
+
     private Integer quantidade;
 }
